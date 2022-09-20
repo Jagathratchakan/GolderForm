@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verification">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#8C4242">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/otp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="ENTER SIX DIGIT PIN"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/etC1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/etC2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMobile" />
+
+        <EditText
+            android:id="@+id/etC2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etC1"
+            app:layout_constraintEnd_toStartOf="@+id/etC3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etC1"
+            app:layout_constraintTop_toTopOf="@+id/etC1" />
+
+        <EditText
+            android:id="@+id/etC3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etC1"
+            app:layout_constraintEnd_toStartOf="@+id/etC4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etC2"
+            app:layout_constraintTop_toTopOf="@+id/etC1" />
+
+        <EditText
+            android:id="@+id/etC4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etC1"
+            app:layout_constraintEnd_toStartOf="@+id/etC5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etC3"
+            app:layout_constraintTop_toTopOf="@+id/etC1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/etC5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etC1"
+            app:layout_constraintEnd_toStartOf="@+id/etC6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etC4"
+            app:layout_constraintTop_toTopOf="@+id/etC1" />
+
+        <EditText
+            android:id="@+id/etC6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/etC1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/etC5"
+            app:layout_constraintTop_toTopOf="@+id/etC1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Forget PIN"
+            app:layout_constraintEnd_toStartOf="@+id/tvResendBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etC6" />
+
+        <TextView
+            android:id="@+id/tvResendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="RESET PIN"
+            android:textColor="#FF3838"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toTopOf="@+id/textView7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="50dp"
+            android:text="VERIFY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBarVerify"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/btnVerify"
+            app:layout_constraintEnd_toEndOf="@+id/btnVerify"
+            app:layout_constraintStart_toStartOf="@+id/btnVerify"
+            app:layout_constraintTop_toTopOf="@+id/btnVerify" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

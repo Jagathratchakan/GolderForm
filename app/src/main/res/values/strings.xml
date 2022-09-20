@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GolderForm</string>
+    <string name="title_activity_home">home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="sugarcane_details">Sugarcane Details</string>
+    <string name="aska_sugar_details">Aska Sugar Details</string>
+    <string name="m_nattu_sakkarai_details">M.Nattu Sakkarai Details</string>
+    <string name="mattai_details">Mattai Details</string>
+    <string name="others_details">Others Details</string>
+    <string name="allai_running_details">Allai Running Details</string>
+    <string name="stock_details">Stock Details</string>
+    <string name="delivery_details">Delivery Details</string>
+    <string name="consolidated_details">Consolidated Details</string>
+    <string name="back">Back</string>
+    <string name="askasugar">Aska Sugar Detials</string>
+    <string name="maha_nattu_sakkarai_details">Maha Nattu Sakkarai Details</string>
+    <string name="kottai_name">Kottai Name</string>
+    <string name="s_no">S.NO</string>
+    <string name="maha_nattu_sakkarai">Maha Nattu Sakkarai</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
