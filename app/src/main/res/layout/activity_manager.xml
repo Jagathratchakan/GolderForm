@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerActivity">
+
+    <Button
+        android:id="@+id/sugar_details"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button"
+        android:text="@string/sugarcane_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/aska_sugar"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button"
+        android:text="@string/aska_sugar_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_details"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Nattu_Sugar"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:text="@string/m_nattu_sakkarai_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_details"
+        app:layout_constraintVertical_bias="0.273"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/mattai"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button"
+        android:text="@string/mattai_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_details"
+        app:layout_constraintVertical_bias="0.423"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/others"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button"
+        android:text="@string/others_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_details"
+        app:layout_constraintVertical_bias="0.608"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:background="@drawable/round"
+        android:text="@string/back"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

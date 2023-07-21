@@ -18,7 +18,7 @@
             android:id="@+id/delivery"
             android:layout_width="271dp"
             android:layout_height="51dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="1dp"
             android:layout_marginTop="4dp"
             android:background="@drawable/button"
             android:gravity="center"
@@ -29,45 +29,149 @@
             android:textStyle="bold" />
 
     </LinearLayout>
-
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="55dp"
-        android:layout_height="28dp"
-        android:text="Date"
-        android:textColor="#ad168b"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="71dp"
-        android:layout_height="50dp"
+        android:id="@+id/textView9"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
         android:text="Kottai Name"
-        android:textColor="#ad168b"
-        android:textSize="20dp"
+        android:textColor="#234785"
+        android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.226" />
+
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="147dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="84dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView11"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="92dp"
+        android:layout_height="34dp"
+        android:text="DATE"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:textDirection="firstStrong"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_add"
+        android:onClick="onAddField"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="404dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/parent_linear_layout"
+        app:layout_constraintVertical_bias="0.635">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Person_delivery"
+                    android:layout_width="185dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/forget"
+                    android:inputType="text"
+                    android:maxLength="4" />
+
+                <Spinner
+                    android:id="@+id/delivery_item"
+                    android:layout_width="157dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.679"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toTopOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="0.0" />
+                <Button
+                    android:id="@+id/delete_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_baseline"
+                    android:onClick="onDelete" />
+            </LinearLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

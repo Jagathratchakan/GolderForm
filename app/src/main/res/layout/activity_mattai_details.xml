@@ -16,6 +16,7 @@
         android:textCursorDrawable="@drawable/forget"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.229"
@@ -25,21 +26,22 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="205dp"
+        android:layout_width="181dp"
         android:layout_height="51dp"
+        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="88dp"
         android:layout_height="50dp"
         android:text="DATE"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,11 +53,29 @@
 
 
     <TextView
+        android:id="@+id/date"
+        android:layout_width="188dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="64dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="128dp"
-        android:layout_height="69dp"
+        android:layout_height="85dp"
         android:text="Number of Trips"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +90,7 @@
         android:layout_width="109dp"
         android:layout_height="75dp"
         android:text="Kottai Name"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,8 +102,8 @@
 
     <Button
         android:id="@+id/savebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="113dp"
+        android:layout_height="66dp"
         android:background="@drawable/button"
         android:text="SAVE"
         android:textColor="#fff"
@@ -99,15 +119,17 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/vechileid"
-        android:layout_width="207dp"
-        android:layout_height="58dp"
+        android:id="@+id/trips"
+        android:layout_width="184dp"
+        android:layout_height="72dp"
         android:layout_marginEnd="16dp"
+        android:layout_weight="3"
         android:background="@drawable/forget"
+        android:maxLength="3"
         android:text=""
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.417"

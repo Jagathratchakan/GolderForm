@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+
+    <Button
+        android:id="@+id/Stock_details"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button"
+        android:text="@string/stock_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/delivery"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/button"
+        android:text="@string/delivery_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consolidated"
+        app:layout_constraintVertical_bias="0.273"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/consolidated"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/button"
+        android:text="@string/consolidated_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Stock_details"
+        app:layout_constraintVertical_bias="0.161"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Allai_details"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:text="@string/allai_running_details"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Stock_details"
+        app:layout_constraintVertical_bias="0.431"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:background="@drawable/round"
+        android:text="@string/back"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

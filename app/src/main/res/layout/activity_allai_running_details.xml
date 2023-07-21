@@ -5,5 +5,383 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AllaiRunningDetails">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/askasugar"
+            android:layout_width="271dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/askasugar"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/forget"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:text="Aska Sugar Used"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:text="M. Nattu Sakkaarai Used"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+
+    <TextView
+        android:id="@+id/disel"
+        android:layout_width="152dp"
+        android:layout_height="38dp"
+        android:text="Disel Filled"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <EditText
+        android:id="@+id/nattu_sakkarai_used"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:background="@drawable/forget"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.478"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/soda"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:text="Soda"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+    <EditText
+        android:id="@+id/sode_no"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/forget"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/soda"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/soda"
+        app:layout_constraintTop_toTopOf="@+id/soda"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/sunambu"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:text="Sunambu"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <EditText
+        android:id="@+id/sunambu_no"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:background="@drawable/forget"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/sunambu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/sunambu"
+        app:layout_constraintTop_toTopOf="@+id/sunambu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tin"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:text="Tins"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+
+    <EditText
+        android:id="@+id/tins_no"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/forget"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tin"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toEndOf="@+id/tin"
+        app:layout_constraintTop_toTopOf="@+id/tin"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/aska_sugar_used"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:background="@drawable/forget"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/desel_no"
+        android:layout_width="153dp"
+        android:layout_height="39dp"
+        android:background="@drawable/forget"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/disel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toEndOf="@+id/disel"
+        app:layout_constraintTop_toTopOf="@+id/disel"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:text="Kottai Name"
+        android:textColor="#234785"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="92dp"
+        android:layout_height="34dp"
+        android:text="DATE"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="84dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="#234785"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="113dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:textDirection="firstStrong"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        tools:ignore="MissingConstraints" />
+
+    <TableLayout
+        android:layout_width="366dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#FF55B9D8">
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Number of Items"
+                android:textColor="#234785"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.126" />
+
+            <TextView
+                android:id="@+id/deliverd"
+                android:layout_width="162dp"
+                android:layout_height="73dp"
+                android:gravity="center"
+                android:text="Item"
+                android:textColor="#234785"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.126" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/Person_delivery"
+                android:layout_width="203dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/forget"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <Spinner
+                android:id="@+id/delivery_item"
+                android:layout_width="157dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/border"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.679"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9"
+                app:layout_constraintVertical_bias="0.0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

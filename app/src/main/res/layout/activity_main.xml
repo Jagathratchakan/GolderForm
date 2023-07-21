@@ -11,17 +11,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/header"
+        android:background="@drawable/blue_bg"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="114dp"
+            android:layout_height="86dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/logo" />
+
         <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:background="#7D1C8E"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
             android:rotationX="8"
-            android:text="GOLDEN NAME"
+            android:text="HAPPIE SUGARS"
             android:textColor="#fff"
             android:textSize="30dp"
             android:textStyle="bold|italic" />
@@ -34,8 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:text="Login"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="35dp"
         android:textStyle="bold" />
 
@@ -57,6 +67,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="35dp"
         android:background="@drawable/forget"
+        android:hint="Enter Email Id"
         android:text="" />
 
     <TextView
@@ -77,6 +88,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="35dp"
         android:background="@drawable/forget"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:text=""/>
 
     <TextView
@@ -90,14 +103,23 @@
         android:textSize="18dp"
         android:textStyle="bold" />
 
+
     <Button
         android:id="@+id/login"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="331dp"
+        android:layout_height="47dp"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/button"
         android:text="Login"
-        android:textColor="#fff"/>
+        android:textColor="#fff" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="150dp" />
 
 </LinearLayout>

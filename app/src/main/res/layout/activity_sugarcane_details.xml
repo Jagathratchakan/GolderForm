@@ -6,41 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".SugarcaneDetails">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="271dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/sugarcane_details"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/forget"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/sugardetials"
-        android:layout_width="267dp"
-        android:layout_height="35dp"
-        android:text="@string/sugarcane_details"
-        android:textColor="#4E09BC"
-        android:textCursorDrawable="@drawable/forget"
-        android:textSize="25sp"
+        android:id="@+id/textView8"
+        android:layout_width="68dp"
+        android:layout_height="34dp"
+        android:text="DATE"
+        android:textColor="#234785"
+        android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="203dp"
-        android:layout_height="52dp"
-        android:backgroundTint="#AF2A2A"
+        android:layout_width="141dp"
+        android:layout_height="43dp"
+        android:background="@drawable/border"
         android:contentDescription="@string/allai_running_details"
         app:layout_constraintBottom_toBottomOf="@+id/kottaiName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintStart_toEndOf="@+id/kottaiName"
         app:layout_constraintTop_toTopOf="@+id/kottaiName"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.437" />
 
     <TextView
         android:id="@+id/kottaiName"
         android:layout_width="123dp"
         android:layout_height="27dp"
         android:text="@string/kottai_name"
-        android:textColor="#6517AA"
+        android:textColor="#234785"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +94,7 @@
     <TableRow
         android:layout_width="343dp"
         android:layout_height="48dp"
-        android:background="#34A36A"
+        android:background="#55B9D8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -68,7 +109,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="@string/s_no"
-            android:textColor="#6A5959"
+            android:textColor="#234785"
             android:textSize="19sp"
             android:textStyle="bold" />
 
@@ -78,7 +119,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Vechicle No"
-            android:textColor="#6A5959"
+            android:textColor="#234785"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -88,7 +129,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Total Ton"
-            android:textColor="#6A5959"
+            android:textColor="#234785"
             android:textSize="17sp"
             android:textStyle="bold" />
 
@@ -98,7 +139,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Vettal"
-            android:textColor="#6A5959"
+            android:textColor="#234785"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -108,7 +149,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Name of Person"
-            android:textColor="#6A5959"
+            android:textColor="#234785"
             android:textSize="15sp"
             android:textStyle="bold" />
     </TableRow>
@@ -125,14 +166,14 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/s_no"
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:ems="10"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/vechileid"
             android:layout_width="109dp"
             android:layout_height="match_parent"
             android:ems="10"
@@ -140,21 +181,22 @@
             android:text="" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/Tone"
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:text="" />
 
         <Spinner
             android:id="@+id/spinner2"
             android:layout_width="62dp"
+            android:background="@drawable/border"
             android:layout_height="match_parent"
             android:textAlignment="textEnd" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/Name"
             android:layout_width="63dp"
             android:layout_height="53dp"
             android:ems="10"

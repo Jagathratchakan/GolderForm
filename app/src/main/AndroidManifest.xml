@@ -14,7 +14,19 @@
         android:theme="@style/Theme.GolderForm"
         tools:targetApi="31">
         <activity
-            android:name=".ConsolidatedDetails"
+            android:name=".flashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagerActivity"
             android:exported="false" />
         <activity
             android:name=".DeliveryDetails"
@@ -53,13 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

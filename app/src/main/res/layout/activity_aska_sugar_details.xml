@@ -6,41 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".AskaSugarDetails">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/askasugar"
-        android:layout_width="271dp"
-        android:layout_height="51dp"
-        android:background="@drawable/button"
-        android:text="@string/askasugar"
-        android:textColor="#fff"
-        android:textCursorDrawable="@drawable/forget"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        <TextView
+            android:id="@+id/askasugar"
+            android:layout_width="271dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/askasugar"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/forget"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="205dp"
-        android:layout_height="51dp"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.27" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="88dp"
         android:layout_height="50dp"
         android:text="DATE"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,11 +58,27 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <TextView
+        android:id="@+id/date"
+        android:layout_width="181dp"
+        android:layout_height="51dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="143dp"
         android:layout_height="67dp"
         android:text="Number of Bags"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="27dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +94,7 @@
         android:layout_width="128dp"
         android:layout_height="69dp"
         android:text="Vechile No"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,7 +109,7 @@
         android:layout_width="109dp"
         android:layout_height="75dp"
         android:text="Kottai Name"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,15 +141,17 @@
         android:id="@+id/vechileid"
         android:layout_width="207dp"
         android:layout_height="58dp"
-        android:layout_marginEnd="4dp"
         android:background="@drawable/forget"
         android:text=""
+        android:inputType="text"
+        android:maxLength="10"
+        android:layout_weight = "10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402"
+        app:layout_constraintVertical_bias="0.417"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -134,13 +159,17 @@
         android:layout_width="207dp"
         android:layout_height="56dp"
         android:background="@drawable/forget"
+        android:inputType="number"
         android:text=""
+        android:maxLength="3"
+        android:layout_weight="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584"
+        app:layout_constraintVertical_bias="0.581"
         tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

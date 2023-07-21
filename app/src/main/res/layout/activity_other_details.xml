@@ -35,8 +35,8 @@
         android:layout_width="61dp"
         android:layout_height="44dp"
         android:text="Date"
-        android:textColor="#ad168b"
-        android:textSize="20dp"
+        android:textColor="#234785"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,12 +45,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.108" />
 
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
+        android:layout_width="84dp"
+        android:layout_height="48dp"
         android:text="Kottai Name"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,20 +81,21 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="147dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="84dp"
+        android:layout_width="148dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView11"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="89dp"
         android:layout_height="46dp"
         android:text="No of Oil Tin"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,16 +107,18 @@
 
     <EditText
         android:id="@+id/no_oil_tins"
-        android:layout_width="156dp"
-        android:layout_height="47dp"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="224dp"
         android:background="@drawable/forget"
+        android:inputType="number"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/textView12"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -104,7 +126,7 @@
         android:layout_width="68dp"
         android:layout_height="41dp"
         android:text="Soda"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,28 +136,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.382" />
 
+
     <EditText
         android:id="@+id/no_soda"
-        android:layout_width="163dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/forget"
         android:text=""
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.555"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="84dp"
         android:layout_height="54dp"
         android:text="Kurunai Soda"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -147,24 +170,25 @@
 
     <EditText
         android:id="@+id/no_kurunai"
-        android:layout_width="174dp"
-        android:layout_height="58dp"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
         android:background="@drawable/forget"
         android:text=""
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toTopOf="@+id/textView14"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:text="Sunamae"
-        android:textColor="#ad168b"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:text="Sunambu"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -176,17 +200,18 @@
 
     <EditText
         android:id="@+id/no_suname"
-        android:layout_width="180dp"
-        android:layout_height="45dp"
+        android:layout_width="152dp"
+        android:layout_height="42dp"
         android:layout_marginStart="17dp"
         android:background="@drawable/forget"
+        android:inputType="number"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.347"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -194,26 +219,27 @@
         android:layout_width="96dp"
         android:layout_height="48dp"
         android:text="Mattai Powder"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.664" />
 
     <EditText
         android:id="@+id/no_mattai"
-        android:layout_width="174dp"
-        android:layout_height="58dp"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/forget"
         android:text=""
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_bias="0.317"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/textView16"
         app:layout_constraintVertical_bias="1.0"
@@ -224,7 +250,7 @@
         android:layout_width="92dp"
         android:layout_height="58dp"
         android:text="No of Workers"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -236,9 +262,10 @@
 
     <Spinner
         android:id="@+id/spinner_worker"
-        android:layout_width="91dp"
-        android:layout_height="58dp"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
         android:layout_marginEnd="20dp"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/textView17"
         app:layout_constraintEnd_toStartOf="@+id/no_workers"
         app:layout_constraintTop_toTopOf="@+id/textView17"
@@ -250,10 +277,11 @@
         android:layout_height="56dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/forget"
+        android:inputType="number"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toTopOf="@+id/textView17"
         app:layout_constraintVertical_bias="0.0"
@@ -264,7 +292,7 @@
         android:layout_width="87dp"
         android:layout_height="39dp"
         android:text="Hydros"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -274,17 +302,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.75" />
 
-    <Spinner
-        android:id="@+id/spinner_hydro"
-        android:layout_width="161dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="48dp"
+    <EditText
+        android:id="@+id/no_hydros"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/forget"
+        android:text=""
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/textView18"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/savebutton"

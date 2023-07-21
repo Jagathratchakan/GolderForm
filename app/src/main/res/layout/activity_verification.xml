@@ -14,12 +14,15 @@
 
         <LinearLayout
 
+            android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/header"
+            android:background="@drawable/blue_bg"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp">
 
         </LinearLayout>
 
@@ -27,7 +30,7 @@
             android:id="@+id/imageView2"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,8 +81,13 @@
             android:background="@drawable/border"
             android:ems="10"
             android:gravity="center"
-            android:inputType="phone"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_weight = "1"
             android:textSize="20sp"
+            android:nextFocusLeft="@+id/etC2"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             app:layout_constraintEnd_toStartOf="@+id/etC2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -92,15 +100,22 @@
             android:layout_height="55dp"
             android:layout_marginEnd="3dp"
             android:background="@drawable/border"
+            android:layout_weight = "1"
             android:ems="10"
             android:gravity="center"
-            android:inputType="phone"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/etC3"
+            android:nextFocusDown="@+id/etC1"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/etC1"
             app:layout_constraintEnd_toStartOf="@+id/etC3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/etC1"
-            app:layout_constraintTop_toTopOf="@+id/etC1" />
+            app:layout_constraintTop_toTopOf="@+id/etC1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            />
 
         <EditText
             android:id="@+id/etC3"
@@ -109,9 +124,15 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/border"
             android:ems="10"
+            android:layout_weight = "1"
             android:gravity="center"
-            android:inputType="phone"
+            android:inputType="number"
+            android:maxLength="1"
             android:textSize="20sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/etC4"
+            android:nextFocusDown="@+id/etC2"
             app:layout_constraintBottom_toBottomOf="@+id/etC1"
             app:layout_constraintEnd_toStartOf="@+id/etC4"
             app:layout_constraintHorizontal_bias="0.5"
@@ -125,9 +146,15 @@
             android:layout_marginEnd="3dp"
             android:background="@drawable/border"
             android:ems="10"
+            android:layout_weight = "1"
             android:gravity="center"
-            android:inputType="phone"
+            android:inputType="number"
+            android:maxLength="1"
             android:textSize="20sp"
+            android:nextFocusForward="@+id/etC5"
+            android:nextFocusDown="@+id/etC3"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             app:layout_constraintBottom_toBottomOf="@+id/etC1"
             app:layout_constraintEnd_toStartOf="@+id/etC5"
             app:layout_constraintHorizontal_bias="0.5"
@@ -141,10 +168,16 @@
             android:layout_height="55dp"
             android:layout_marginEnd="3dp"
             android:background="@drawable/border"
+            android:layout_weight = "1"
             android:ems="10"
             android:gravity="center"
-            android:inputType="phone"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/etC6"
+            android:nextFocusDown="@+id/etC4"
             android:textSize="20sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             app:layout_constraintBottom_toBottomOf="@+id/etC1"
             app:layout_constraintEnd_toStartOf="@+id/etC6"
             app:layout_constraintHorizontal_bias="0.5"
@@ -156,10 +189,14 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:background="@drawable/border"
+            android:layout_weight = "1"
             android:ems="10"
             android:gravity="center"
-            android:inputType="phone"
+            android:inputType="number"
+            android:maxLength="1"
             android:textSize="20sp"
+            android:nextFocusDown="@+id/etC5"
+            android:imeOptions="actionNext"
             app:layout_constraintBottom_toBottomOf="@+id/etC1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -198,7 +235,7 @@
             android:id="@+id/btnVerify"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="50dp"
             android:text="VERIFY"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -206,7 +243,7 @@
             app:layout_constraintHorizontal_bias="0.482"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.447" />
 
         <ProgressBar
             android:id="@+id/progressBarVerify"
@@ -218,6 +255,21 @@
             app:layout_constraintEnd_toEndOf="@+id/btnVerify"
             app:layout_constraintStart_toStartOf="@+id/btnVerify"
             app:layout_constraintTop_toTopOf="@+id/btnVerify" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Sign out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVerify"
+            app:layout_constraintVertical_bias="0.992" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

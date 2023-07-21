@@ -6,27 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".SugarcaneDetails">
 
-    <TextView
-        android:id="@+id/nattu"
-        android:layout_width="271dp"
-        android:layout_height="51dp"
-        android:background="@drawable/button"
-        android:text="@string/maha_nattu_sakkarai"
-        android:textColor="#fff"
-        android:textCursorDrawable="@drawable/forget"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/delivery"
+            android:layout_width="271dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/maha_nattu_sakkarai"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/forget"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="205dp"
-        android:layout_height="51dp"
+        android:layout_width="181dp"
+        android:layout_height="54dp"
+        android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -39,7 +47,7 @@
         android:layout_width="88dp"
         android:layout_height="50dp"
         android:text="DATE"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,11 +58,27 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <TextView
+        android:id="@+id/date"
+        android:layout_width="188dp"
+        android:layout_height="61dp"
+        android:background="@drawable/forget"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="143dp"
         android:layout_height="67dp"
         android:text="Number of Bags"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="27dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +94,7 @@
         android:layout_width="128dp"
         android:layout_height="69dp"
         android:text="Vechile No"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,7 +109,7 @@
         android:layout_width="109dp"
         android:layout_height="75dp"
         android:text="Kottai Name"
-        android:textColor="#ad168b"
+        android:textColor="#234785"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -117,23 +141,28 @@
         android:id="@+id/vechileid"
         android:layout_width="207dp"
         android:layout_height="58dp"
-        android:layout_marginEnd="4dp"
         android:background="@drawable/forget"
         android:text=""
+        android:inputType="text"
+        android:maxLength="10"
+        android:layout_weight = "10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.417"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:id="@+id/noofbags"
-        android:layout_width="188dp"
-        android:layout_height="64dp"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:layout_weight="3"
         android:background="@drawable/forget"
+        android:maxLength="3"
         android:text=""
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"

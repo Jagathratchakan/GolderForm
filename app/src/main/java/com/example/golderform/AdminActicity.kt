@@ -59,10 +59,10 @@ class AdminActicity : AppCompatActivity() {
             startActivity(intent_var)
         }
 
-        consolidated_btn.setOnClickListener{
+        /*consolidated_btn.setOnClickListener{
             val intent_var = Intent(this,ConsolidatedDetails::class.java)
             startActivity(intent_var)
-        }
+        }*/
 
 
     }

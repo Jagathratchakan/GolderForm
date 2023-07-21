@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/Person_delivery"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/forget"
+        android:inputType="text"
+        android:maxLength="4" />
+
+    <Spinner
+        android:id="@+id/delivery_item"
+        android:layout_width="157dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        />
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_baseline"
+        android:onClick="onDelete" />
+
+</LinearLayout>

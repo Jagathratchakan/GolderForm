@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GolderForm</string>
+    <string name="app_name">HappieSugar</string>
     <string name="title_activity_home">home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -26,6 +26,6 @@
     <string name="kottai_name">Kottai Name</string>
     <string name="s_no">S.NO</string>
     <string name="maha_nattu_sakkarai">Maha Nattu Sakkarai</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

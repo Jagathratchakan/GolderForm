@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "591980500102",
+    "project_id": "golderform",
+    "storage_bucket": "golderform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591980500102:android:b4f0d71793b1b773716d07",
+        "android_client_info": {
+          "package_name": "com.example.golderform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591980500102-kj2mdstueo0dkpj9n5lam79o4qtnib32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp_U0QkYKl_KfMgGX1o0oQNs6G6PXy8hM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591980500102-kj2mdstueo0dkpj9n5lam79o4qtnib32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
